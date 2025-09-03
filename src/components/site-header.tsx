@@ -14,24 +14,24 @@ export function SiteHeader() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="#features" legacyBehavior passHref>
-                  <NavigationMenuLink className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">Почему мы</NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink asChild className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="#features">Почему мы</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="#services" legacyBehavior passHref>
-                  <NavigationMenuLink className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">Услуги</NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink asChild className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="#services">Услуги</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="#experts" legacyBehavior passHref>
-                  <NavigationMenuLink className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">Эксперты</NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink asChild className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="#experts">Эксперты</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="#reviews" legacyBehavior passHref>
-                  <NavigationMenuLink className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">Отзывы</NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink asChild className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="#reviews">Отзывы</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
