@@ -1,0 +1,53 @@
+"use client";
+
+import Link from "next/link";
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@/components/ui/navigation-menu";
+import { Button } from "@/components/ui/button";
+
+export function SiteHeader() {
+  return (
+    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/70 backdrop-blur">
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
+        <Link href="/" className="font-semibold tracking-tight">Zodiaclab</Link>
+
+        <nav className="hidden md:block">
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <Link href="#features" legacyBehavior passHref>
+                  <NavigationMenuLink className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">Почему мы</NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="#services" legacyBehavior passHref>
+                  <NavigationMenuLink className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">Услуги</NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="#experts" legacyBehavior passHref>
+                  <NavigationMenuLink className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">Эксперты</NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="#reviews" legacyBehavior passHref>
+                  <NavigationMenuLink className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">Отзывы</NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </nav>
+
+        <div className="flex items-center gap-2">
+          <Button variant="ghost" asChild>
+            <Link href="/auth/signin">Вход</Link>
+          </Button>
+          <Button asChild>
+            <Link href="#cta">Регистрация</Link>
+          </Button>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+
